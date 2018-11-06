@@ -36,6 +36,10 @@ public class LoginInterceptor extends HandlerInterceptorAdapter {
         response.setHeader("Access-Control-Allow-Methods", "POST,GET,PUT,OPTIONS,DELETE");
         response.setHeader("Access-Control-Allow-Headers", "x-requested-with,Access-Control-Allow-Origin,X-User-Token");
 
+        //测试
+        /*if(true){
+            return true;
+        }*/
         //不拦截OPTION请求
         if (method.equals(RequestMethod.OPTIONS.name())) {
             return true;
