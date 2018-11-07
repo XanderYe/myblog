@@ -12,7 +12,7 @@ import com.xander.myblog.mapper.UserMapper;
 import com.xander.myblog.service.IUserService;
 import com.xander.myblog.util.MD5Util;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
 
 import java.security.NoSuchAlgorithmException;
