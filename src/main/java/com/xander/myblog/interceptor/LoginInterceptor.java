@@ -45,8 +45,8 @@ public class LoginInterceptor extends HandlerInterceptorAdapter {
             return true;
         }
 
-        //不拦截/user/login登录请求
-        if (uri.equals(request.getContextPath() + "/user/login")) {
+        //不拦截/user/login和静态资源的请求
+        if (uri.equals(request.getContextPath() + "/user/login")||uri.equals(request.getContextPath() + "/static")) {
             return true;
         }
         String userToken = request.getHeader("X-User-Token");
